@@ -58,7 +58,7 @@ function render() {
 
         days.forEach(function (day) {
             // we check if the day is today so we can display it in different way
-            if( day == new Date().getDate() && currentDate.getMonth() == new Date().getMonth() ){
+            if( day === new Date().getDate() && currentDate.getMonth() === new Date().getMonth() && currentDate.getFullYear() === new Date().getFullYear() ){
                 row += `<a class="btn btn-primary">${day}</a>`;
             }else{
                 row += `<a class="btn">${day}</a>`;
